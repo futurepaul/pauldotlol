@@ -10,6 +10,12 @@
   "dependencies": {
     "next": "^9.3.3",
     "react": "^16.13.0",
-    "react-dom": "^16.13.0"
+    "react-dom": "^16.13.0",
+    "typeface-inter": "^3.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^13.13.4",
+    "@types/react": "^16.9.34",
+    "typescript": "^3.8.3"
   }
 }
