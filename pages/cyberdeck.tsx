@@ -40,9 +40,9 @@ const CyberDeck = () => {
               want to build a better future with your own hands?
             </p>
             <p>
-              Here at <em>Cyberdeck Users International</em>, we have a finger
-              on the absolute best open source ROMs and user programs, upcoming
-              free protocols, and, of course, tips and tricks for bitcoin node
+              Here at <em>Cyberdeck Users Weekly</em>, we have a finger on the
+              absolute best open source ROMs and user programs, upcoming free
+              protocols, and, of course, tips and tricks for bitcoin node
               operation.
             </p>
             <p>
@@ -51,17 +51,13 @@ const CyberDeck = () => {
             </p>
           </div>
         </div>
+
+        <img src="cyber_logo_full.svg"></img>
         <div className="subscribe">Subscribe Now!</div>
-        <div className="prose">
-          <div className="column">
-            <h2>
-              CYBERDECK USERS Intl.
-              <br />
-            </h2>
-            <h3>(It's a podcast about software)</h3>
-          </div>
-          <div className="column"></div>
-        </div>
+        <h3>
+          (It's a podcast about using regular computers, we're just trying to
+          future-proof a little bit.)
+        </h3>
       </article>
       <style jsx>{`
         .prompt {
@@ -151,6 +147,10 @@ const CyberDeck = () => {
           margin: 0;
           /* or 68px */
           letter-spacing: -0.065em;
+        }
+        .footer {
+          display: flex;
+          align-items: center;
         }
         .deck {
           height: 473px;

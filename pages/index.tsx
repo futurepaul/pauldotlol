@@ -1,13 +1,17 @@
 import Head from "next/head";
+import CyberDeck from "./cyberdeck";
 
-const Icon = ({ image, title, href }) => {
+const Icon = ({ image, title, href, out = false, active = false }) => {
   return (
     <div>
       <a href={href}>
-        <div className="graybox">
+        <div className={`graybox ${active && "active"}`}>
           <img src={image}></img>
         </div>
-        <h3>{title}</h3>
+        <h3>
+          {title}
+          {out && <span>↗</span>}
+        </h3>
       </a>
       <style jsx>{`
         img {
@@ -15,6 +19,12 @@ const Icon = ({ image, title, href }) => {
           height: 64px;
           margin: 2rem;
           image-rendering: crisp-edges;
+        }
+
+        span {
+          font-size: 0.75rem;
+          font-weight: 300;
+          vertical-align: middle;
         }
 
         div {
@@ -32,6 +42,12 @@ const Icon = ({ image, title, href }) => {
           border-radius: 2px;
         }
 
+        .active {
+          background: #989898;
+          box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.25),
+            inset -1px -1px 1px rgba(255, 255, 255, 0.25);
+        }
+
         h3 {
           font-style: italic;
           font-weight: 1000;
@@ -43,6 +59,8 @@ const Icon = ({ image, title, href }) => {
         a {
           color: inherit;
           text-decoration: none;
+          margin-bottom: 0.5rem;
+          margin-top: 1rem;
         }
       `}</style>
     </div>
@@ -85,6 +103,7 @@ const Window = ({ children, title }) => {
         }
 
         .graybox {
+          flex: 1;
           background-color: #e2e0e0;
           padding: 4px;
           box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.25),
@@ -132,7 +151,7 @@ const Window = ({ children, title }) => {
           box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.25),
             1px 1px 0px rgba(255, 255, 255, 0.25);
           border-radius: 2px;
-          padding: 2rem;
+          padding: 1rem;
         }
         .mini-line {
           height: 2px;
@@ -147,14 +166,16 @@ const Window = ({ children, title }) => {
           background: #e2e0e0;
           box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.25),
             inset 0px -1px 1px rgba(255, 255, 255, 0.25);
-          min-width: 2rem;
+          min-width: 1rem;
           margin: 1px;
         }
 
         .wrap-shadow-lines {
+          flex: 1;
           display: flex;
           flex-direction: column;
           justify-content: center;
+          width: 100%;
         }
       `}</style>
     </div>
@@ -177,21 +198,40 @@ const Home = () => (
         </h1>
       </div>
       <div className="windows row">
-        <Window title="PAY PAUL">
-          <Icon image="/icons/pay.png" title="PAY" href="#" />
-        </Window>
-        <Window title="PODCAST">
-          <Icon image="/icons/podcast.png" title="POD" href="#" />
-        </Window>
-        <Window title="BLOG">
-          <Icon image="/icons/blog.png" title="BLOG" href="#" />
-        </Window>
-        <Window title="PROJECTS">
-          <Icon image="/icons/projects.png" title="PROJECTS" href="#" />
+        <nav>
+          <Window title="APPS">
+            <Icon
+              image="/icons/podcast.png"
+              title="POD"
+              href="#"
+              active={true}
+            />
+            <Icon image="/icons/pay.png" title="PAY" href="#" />
+            <Icon
+              image="/icons/blog.png"
+              title="BLOG"
+              out={true}
+              href="https://pauljmiller.com"
+            />
+            <Icon
+              image="/icons/projects.png"
+              title="PROJECTS"
+              out={true}
+              href="https://pauljmiller.com/projects.html"
+            />
+          </Window>
+        </nav>
+        <Window title="POD">
+          <CyberDeck />
         </Window>
       </div>
     </main>
     <style jsx>{`
+      iframe {
+        border: none;
+        height: 90vh;
+        width: 35rem;
+      }
       .column {
         display: flex;
         flex-direction: column;
@@ -204,7 +244,7 @@ const Home = () => (
       .windows {
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
+        align-items: start;
         align-content: stretch;
       }
 
