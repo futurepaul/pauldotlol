@@ -1,3 +1,5 @@
+import Subscribe from "./subscribe";
+
 const CyberDeck = () => {
   return (
     <main>
@@ -53,10 +55,11 @@ const CyberDeck = () => {
         </div>
 
         <img src="cyber_logo_full.svg"></img>
-        <div className="subscribe">Subscribe Now!</div>
+        {/* <div className="subscribe">Subscribe Now!</div> */}
+        <Subscribe />
         <h3>
-          (It's a podcast about using regular computers, we're just trying to
-          future-proof a little bit.)
+          (It's a podcast and newsletter about using regular computers, <br />
+          we're just trying to future-proof a little bit.)
         </h3>
       </article>
       <style jsx>{`
@@ -68,9 +71,13 @@ const CyberDeck = () => {
           margin-left: 60px;
           margin-top: 60px;
         }
+        .subscribe {
+          margin-top: 2rem;
+        }
         main {
           width: 35rem;
           margin: auto;
+          padding-bottom: 4rem;
         }
         article {
           display: flex;
@@ -86,17 +93,6 @@ const CyberDeck = () => {
         .responsive {
           max-width: 100%;
           height: auto;
-        }
-        .subscribe {
-          color: white;
-          background-color: black;
-          padding: 1rem;
-          margin-bottom: 1rem;
-          font-family: IBM Plex Serif;
-          font-style: normal;
-          font-weight: 400;
-          font-size: 20px;
-          line-height: 110%;
         }
         h2 {
           font-family: Inter;
