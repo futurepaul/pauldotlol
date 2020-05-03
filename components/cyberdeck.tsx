@@ -54,7 +54,7 @@ const CyberDeck = () => {
           </div>
         </div>
 
-        <img src="cyber_logo_full.svg"></img>
+        <img className="svg" src="cyber_logo_full.svg"></img>
         {/* <div className="subscribe">Subscribe Now!</div> */}
         <Subscribe />
         <h3>
@@ -63,22 +63,51 @@ const CyberDeck = () => {
         </h3>
       </article>
       <style jsx>{`
-        .prompt {
-          font-family: monospace;
-          font-weight: bold;
-          color: rgba(179, 255, 102, 230);
-          position: relative;
-          margin-left: 60px;
-          margin-top: 60px;
+        @media all and (min-width: 800px) {
+          main {
+            width: 35rem;
+          }
+
+          .prose {
+            display: flex;
+          }
+
+          .subscribe {
+            margin-top: 2rem;
+          }
+          main {
+            margin: auto;
+            padding-bottom: 4rem;
+          }
+
+          em {
+            text-decoration: underline;
+          }
+
+          .prompt {
+            font-family: monospace;
+            font-weight: bold;
+            color: rgba(179, 255, 102, 230);
+            position: relative;
+            margin-left: 60px;
+            margin-top: 60px;
+          }
+
+          .deck {
+            height: 473px;
+            width: 442px;
+            margin-bottom: -50px;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-image: linear-gradient(
+                to bottom,
+                rgba(255, 255, 255, 0) 70%,
+                rgba(255, 255, 255, 1) 90%
+              ),
+              url(/cyberdeck.png);
+          }
         }
-        .subscribe {
-          margin-top: 2rem;
-        }
-        main {
-          width: 35rem;
-          margin: auto;
-          padding-bottom: 4rem;
-        }
+
         article {
           display: flex;
           flex-direction: column;
@@ -86,29 +115,31 @@ const CyberDeck = () => {
           align-items: center;
         }
 
-        em {
-          text-decoration: underline;
+        .prompt {
+          font-family: monospace;
+          font-weight: bold;
+          color: rgba(179, 255, 102, 230);
+          position: relative;
+          margin-left: 60px;
+          margin-top: 50px;
         }
 
-        .responsive {
-          max-width: 100%;
-          height: auto;
+        .deck {
+          height: 343px;
+          width: 332px;
+          margin-bottom: -50px;
+          margin-left: auto;
+          margin-right: auto;
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          background-image: linear-gradient(
+              to bottom,
+              rgba(255, 255, 255, 0) 70%,
+              rgba(255, 255, 255, 1) 90%
+            ),
+            url(/cyberdeck.png);
         }
-        h2 {
-          font-family: Inter;
-          font-style: italic;
-          font-weight: 900;
-          font-size: 16px;
-          line-height: 16px;
-          margin: 0;
-        }
-        .logo-wrapper {
-          width: 100%;
-          text-align: left;
-        }
-        .prose {
-          display: flex;
-        }
+
         .column {
           width: 15rem;
           margin: 1rem;
@@ -148,18 +179,9 @@ const CyberDeck = () => {
           display: flex;
           align-items: center;
         }
-        .deck {
-          height: 473px;
-          width: 442px;
-          margin-bottom: -50px;
-          background-repeat: no-repeat;
-          background-size: 100% 100%;
-          background-image: linear-gradient(
-              to bottom,
-              rgba(255, 255, 255, 0) 70%,
-              rgba(255, 255, 255, 1) 90%
-            ),
-            url(/cyberdeck.png);
+
+        .svg {
+          width: 300px;
         }
 
         @keyframes blink {
@@ -169,18 +191,6 @@ const CyberDeck = () => {
         }
         .blink {
           animation: blink 2s steps(1) infinite both;
-        }
-      `}</style>
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: IBM Plex Serif, serif;
-        }
-
-        * {
-          box-sizing: border-box;
         }
       `}</style>
     </main>

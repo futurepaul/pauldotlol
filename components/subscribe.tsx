@@ -61,9 +61,17 @@ const Subscribe = () => {
       </div>
       {/*End mc_embed_signup*/}
       <style jsx>{`
+        @media all and (min-width: 800px) {
+          #mc_embed_signup_scroll {
+            display: flex;
+            flex-direction: row;
+          }
+        }
+
         #mc_embed_signup_scroll {
           display: flex;
-          flex-direction: row;
+          flex-direction: column;
+          align-items: center;
         }
         input[type="email"] {
           border: 1px solid black;
