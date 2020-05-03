@@ -115,8 +115,8 @@ const Pay = () => {
                 ) : (
                   <p>
                     If you'd prefer to support my longterm financial
-                    independence via a Bitcoin donation, I will gladly create do
-                    a fake ad on the podcast for the product or brand of your
+                    independence via a Bitcoin donation, I will gladly create a
+                    fake ad on the podcast for the product or brand of your
                     choosing.
                   </p>
                 )}
