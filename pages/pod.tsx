@@ -1,20 +1,55 @@
 import Layout from "../components/Layout";
 
+const EpisodeEmbed = ({ title, url }) => (
+  <section>
+    <h2>{title}</h2>
+    <iframe
+      src={url}
+      height="161px"
+      width="100%"
+      frameBorder="0"
+      scrolling="no"
+    ></iframe>
+    <style jsx>{`
+       {
+        /* @media all and (min-width: 800px) {
+        section {
+          padding: 2rem;
+        }
+      } */
+      }
+
+      section {
+        width: 100%;
+        height: 161px;
+        margin-bottom: 1rem;
+      }
+
+      h2 {
+        font-family: Inter;
+        font-style: italic;
+        font-weight: 1000;
+        font-size: 1.5rem;
+        margin: 0.25rem;
+        border-bottom: 1px dotted black;
+      }
+    `}</style>
+  </section>
+);
+
 const Home = () => (
   <Layout pageTitle="paul.lol" windowTitle="POD" navActive="POD">
     <main>
       <article>
         <h1>Here's the Pod</h1>
-        <section>
-          <h2>EPISODE 1</h2>
-          <iframe
-            src="https://anchor.fm/futurepaul/embed/episodes/The-Optimistic-Case-for-Decentralization-edhmkt"
-            height="102px"
-            width="300px"
-            frameBorder="0"
-            scrolling="no"
-          ></iframe>
-        </section>
+        <EpisodeEmbed
+          title="EPISODE 2"
+          url="https://anchor.fm/futurepaul/embed/episodes/Bitcoin-with-Matt-Odell-edmnqg"
+        />
+        <EpisodeEmbed
+          title="EPISODE 1"
+          url="https://anchor.fm/futurepaul/embed/episodes/The-Optimistic-Case-for-Decentralization-edhmkt"
+        />
         <h2>
           <a href="https://anchor.fm/futurepaul">CHECK IT OUT ON ANCHOR</a>
         </h2>
@@ -25,10 +60,6 @@ const Home = () => (
       @media all and (min-width: 800px) {
         main {
           width: 35rem;
-        }
-
-        section {
-          padding: 2rem;
         }
       }
 
@@ -45,7 +76,7 @@ const Home = () => (
       }
       main {
         margin: auto;
-        padding-bottom: 4rem;
+        padding-bottom: 2rem;
       }
       article {
         display: flex;
@@ -63,13 +94,6 @@ const Home = () => (
         height: auto;
       }
 
-      .prose {
-        display: flex;
-      }
-      .column {
-        width: 15rem;
-        margin: 1rem;
-      }
       p,
       h3 {
         font-family: IBM Plex Serif;
@@ -84,7 +108,6 @@ const Home = () => (
       a {
         color: inherit;
         text-decoration: none;
-        margin-bottom: 0.5rem;
         margin-top: 1rem;
       }
 
@@ -105,6 +128,7 @@ const Home = () => (
         font-size: 72px;
         line-height: 94%;
         margin: 0;
+        margin-bottom: 1rem;
         /* or 68px */
         letter-spacing: -0.065em;
       }
@@ -119,28 +143,6 @@ const Home = () => (
       .footer {
         display: flex;
         align-items: center;
-      }
-      .deck {
-        height: 473px;
-        width: 442px;
-        margin-bottom: -50px;
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        background-image: linear-gradient(
-            to bottom,
-            rgba(255, 255, 255, 0) 70%,
-            rgba(255, 255, 255, 1) 90%
-          ),
-          url(/cyberdeck.png);
-      }
-
-      @keyframes blink {
-        50% {
-          opacity: 0.1;
-        }
-      }
-      .blink {
-        animation: blink 2s steps(1) infinite both;
       }
     `}</style>
   </Layout>
