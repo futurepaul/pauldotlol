@@ -43,6 +43,10 @@ const Home = () => (
       <article>
         <h1>Here's the Pod</h1>
         <EpisodeEmbed
+          title="EPISODE 3"
+          url="https://anchor.fm/futurepaul/embed/episodes/Hmm-are-we-using-computers-correctly-edr27i"
+        />
+        <EpisodeEmbed
           title="EPISODE 2"
           url="https://anchor.fm/futurepaul/embed/episodes/Bitcoin-with-Matt-Odell-edmnqg"
         />
