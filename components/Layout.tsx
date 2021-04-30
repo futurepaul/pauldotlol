@@ -69,22 +69,6 @@ const Layout = ({ children, pageTitle, windowTitle, navActive }) => {
             transform: scale(0);
           }
         `}</style>
-        <style jsx global>{`
-          html,
-          body {
-            background-image: url(/paul_b2.png);
-            background-color: #00a3ff;
-            padding: 0;
-            margin: 0;
-            font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI,
-              Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-              Helvetica Neue, sans-serif;
-          }
-
-          * {
-            box-sizing: border-box;
-          }
-        `}</style>
       </div>
     </>
   );
