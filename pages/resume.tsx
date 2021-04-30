@@ -9,23 +9,26 @@ const Pay = () => {
           <h1 id="who-is-paul-miller">Who is Paul?</h1>
           <section>
             <p>
-              Paul Miller is a mobile app developer with half a year of
-              professional experience building React Native apps and designing
-              UIs in Figma. Also: over a year of Rust desktop GUI open source
-              work. Great at finding hairy problems and doing the
-              &quot;dumb&quot; thing to get the conversation moving toward the
-              right solution. Recently reskilled from writer to developer.
+              Paul Miller is a web and mobile developer with a year of
+              professional experience building React Native apps. He's even more
+              comfortable building web apps in React, and as an open source
+              hobby builds desktop apps in Rust. Great at finding hairy problems
+              and doing the &quot;dumb&quot; thing to get the conversation
+              moving toward the right solution. Recently reskilled from writer
+              to developer.
             </p>
           </section>
           <h1 id="experience">Experience</h1>
           <section>
             <h2 id="mobile-app-developer">Mobile App Developer</h2>
             <p>
-              <em>Giant Killer - Sunbury, OH (Remote) / May 2020 - Present</em>
+              <em>
+                Giant Killer - Sunbury, OH (Remote) / May 2020 - April 2021
+              </em>
             </p>
             <ul>
               <li>
-                Worked on near total rewrite of primary app to TypeScript and
+                Worked on near total rewrite of legacy app to TypeScript and
                 more idiomatic React, resulting in an almost 50 percent
                 reduction code base size while also reducing bugs, adding
                 features, and adding some new bugs yet to be found.

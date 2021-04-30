@@ -1,15 +1,19 @@
+import Link from "next/link";
+
 const Icon = ({ image, title, href, out = false, active = "" }) => {
   return (
     <div>
-      <a href={href}>
-        <div className={`graybox ${active === title ? "active" : ""}`}>
-          <img src={image}></img>
-        </div>
-        <h3>
-          {title}
-          {out && <span>↗</span>}
-        </h3>
-      </a>
+      <Link href={href}>
+        <a>
+          <div className={`graybox ${active === title ? "active" : ""}`}>
+            <img src={image}></img>
+          </div>
+          <h3>
+            {title}
+            {out && <span>↗</span>}
+          </h3>
+        </a>
+      </Link>
       <style jsx>{`
         img {
           width: 32px;
@@ -37,14 +41,11 @@ const Icon = ({ image, title, href, out = false, active = "" }) => {
           vertical-align: middle;
         }
 
-        div {
+        .graybox {
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
-        }
-
-        .graybox {
           background-color: #e2e0e0;
           padding: 4px;
           box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.25),

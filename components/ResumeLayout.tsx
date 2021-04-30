@@ -42,8 +42,10 @@ paul@paul.lol"
               </ul>
               <h2 id="skills">Skills</h2>
               <ul>
-                <li>React / React Native</li>
-                <li>JavaScript / TypeScript</li>
+                <li>React</li>
+                <li>React Native</li>
+                <li>Next.js</li>
+                <li>TypeScript</li>
                 <li>Rust</li>
                 <li>Figma</li>
                 <li>Git / GitHub</li>

@@ -1,12 +1,10 @@
-import Subscribe from "./subscribe";
-
 const CyberDeck = () => {
   return (
     <main>
       <article>
         <div className="deck">
           <div className="prompt">
-            <code>$> WHAT NOW</code>
+            <code>$&gt; WHAT NOW</code>
             <code className="blink">_</code>
           </div>
         </div>
@@ -53,13 +51,12 @@ const CyberDeck = () => {
             </p>
           </div>
         </div>
-
-        <img className="svg" src="cyber_logo_full.svg"></img>
-        {/* <div className="subscribe">Subscribe Now!</div> */}
-        <Subscribe />
+        <a className="button" href="https://anchor.fm/futurepaul">
+          Listen
+        </a>
         <h3>
-          (It's a podcast and newsletter about using regular computers, <br />
-          we're just trying to future-proof a little bit.)
+          (It's a podcast about using regular computers, <br />
+          I'm just trying to future-proof a little bit.)
         </h3>
       </article>
       <style jsx>{`
@@ -119,7 +116,7 @@ const CyberDeck = () => {
           font-family: monospace;
           font-weight: bold;
           color: rgba(179, 255, 102, 230);
-          position: relative;
+          position: 13 <div className= "prose" > relative;
           margin-left: 60px;
           margin-top: 50px;
         }
@@ -191,6 +188,23 @@ const CyberDeck = () => {
         }
         .blink {
           animation: blink 2s steps(1) infinite both;
+        }
+        .button {
+          color: white;
+          background-color: black;
+          padding: 0.5rem;
+          font-family: IBM Plex Serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 110%;
+          border: 1px solid white;
+        }
+        a {
+          color: inherit;
+          text-decoration: none;
+          margin-bottom: 0.5rem;
+          margin-top: 0.5rem;
         }
       `}</style>
     </main>
