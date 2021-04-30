@@ -1,4 +1,4 @@
-import { NowRequest, NowResponse } from "@now/node";
+import { NowRequest, NowResponse } from "@vercel/node";
 const btcpay = require("btcpay");
 
 const PRIVATEKEY = process.env.BTCPAY_KEY;

@@ -91,15 +91,6 @@
   resolved "https://registry.yarnpkg.com/@next/react-refresh-utils/-/react-refresh-utils-10.2.0.tgz#55953b697769c6647f371bc6bcd865a24e1a22e9"
   integrity sha512-3I31K9B4hEQRl7yQ44Umyz+szHtuMJrNdwsgJGhoEnUCXSBRHp5wv5Zv8eDa2NewSbe53b2C0oOpivrzmdBakw==
 
-"@now/node@^1.5.1":
-  version "1.8.5"
-  resolved "https://registry.yarnpkg.com/@now/node/-/node-1.8.5.tgz#471196dbe8221c9f20692e13cf0f4272c6cf3def"
-  integrity sha512-dZ/ZzOLug0ap/jiLVnmwS93PpbNjGR/SkDQjQ+BFRTTi2vUZ768CGUpmgoZy81uxLjZL9xlMIhmTVHwjfxu7WA==
-  dependencies:
-    "@types/node" "*"
-    ts-node "8.9.1"
-    typescript "3.9.3"
-
 "@opentelemetry/api@0.14.0":
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/@opentelemetry/api/-/api-0.14.0.tgz#4e17d8d2f1da72b19374efa7b6526aa001267cae"
@@ -140,6 +131,15 @@
   version "0.16.1"
   resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.1.tgz#18845205e86ff0038517aab7a18a62a6b9f71275"
   integrity sha512-EaCxbanVeyxDRTQBkdLb3Bvl/HK7PBK6UJjsSixB0iHKoWxE5uu2Q/DgtpOhPIojN0Zl1whvOd7PoHs2P0s5eA==
+
+"@vercel/node@^1.5.1":
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/@vercel/node/-/node-1.10.0.tgz#98683c005da6f9ab0f21696409c520baffd4cb4a"
+  integrity sha512-11FIFoF4v9m/jAOSamwBDMsS2yIDa0fSnVhR70bbcUdBcu3BGGMCpg+jpA6rvkQSOa/WbTRvvu9hFh5bOsZxrw==
+  dependencies:
+    "@types/node" "*"
+    ts-node "8.9.1"
+    typescript "3.9.3"
 
 ajv@^6.12.3:
   version "6.12.6"
