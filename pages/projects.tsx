@@ -11,7 +11,6 @@ const Projects = ({ content }) => (
       className={styles.projects}
       dangerouslySetInnerHTML={{ __html: content }}
     />
-    <style jsx>{``}</style>
   </Layout>
 );
 
