@@ -1,5 +1,23 @@
 # 2021
 
+## SpiritWord Chapel
+
+![spiritword chapel](spiritword.png)
+
+### What
+Simple website for my dad to host his weekly sermons.
+Originally a quick and dirty project I built in a day in response to the lockdown.
+I recently revisited it to add a little homegrown CMS so he can update it himself.
+
+### How
+React, Next.js, Supabase (Postgres, basically)
+
+### Where
+[SpiritWord Chapel](https://spiritwordchapel.org/)
+
+[GitHub](https://github.com/futurepaul/spiritword)
+
+
 ## Address Factory
 
 ![address factory](address-factory.png)
@@ -45,8 +63,6 @@ It seems to be helping, because it's one of my most popular repos!
 Rust, Druid, Markdown
 
 ### Where
-[sat / cent parity?](https://sat-cent.vercel.app/)
-
 [GitHub](https://github.com/futurepaul/druid-todo-tutorial)
 
 # 2020
@@ -62,6 +78,8 @@ The CSS to turn the penny into a (live updated!) pie chart was especially fun.
 React, Next.js, Kraken API
 
 ### Where
+[sat / cent parity](satcentparity.com/)
+
 [GitHub](https://github.com/futurepaul/sat-cent)
 
 
@@ -134,6 +152,8 @@ The CSS-in-js is a mess, but I'm the only person who has to deal with it.
 React, Next.js
 
 ### Where
+[GitHub](https://github.com/futurepaul/pauldotlol)
+
 [paul.lol](https://paul.lol)
 
 ## Code on tape
