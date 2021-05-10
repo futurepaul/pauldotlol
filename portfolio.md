@@ -1,3 +1,11 @@
+This is some of my work that I think reflects well on me as a developer. If you want the full firehose, check out my GitHub, but there are a lot of false starts on there just warning you.
+
+I'm currently looking for work so please hit me up if you have something! My Twitter DMs are open, or you could try and discern my email address if you're feeling bold. (Anything at paul.lol works).
+
+[@futurepaul on GitHub](https://github.com/futurepaul/)
+[@futurepaul on Twitter](https://twitter.com/futurepaul/)
+
+
 # 2021
 
 ## SpiritWord Chapel
@@ -78,7 +86,7 @@ The CSS to turn the penny into a (live updated!) pie chart was especially fun.
 React, Next.js, Kraken API
 
 ### Where
-[sat / cent parity](satcentparity.com/)
+[sat / cent parity](http://satcentparity.com/)
 
 [GitHub](https://github.com/futurepaul/sat-cent)
 
