@@ -1,5 +1,4 @@
 .projects {
-  width: 35rem;
 }
 .projects p {
   margin-top: 0.5rem;
@@ -34,8 +33,8 @@
 }
 
 .projects img {
-  max-width: 30rem;
-  max-height: 30rem;
+  max-width: 90vw;
+  max-height: 90vw;
   border: 4px solid #e2e0e0;
   background: #e2e0e0;
   box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.25),
@@ -68,4 +67,15 @@
   text-transform: uppercase;
   font-weight: 1000;
   font-size: 1rem;
+}
+
+@media all and (min-width: 800px) {
+  .projects {
+    width: 35rem;
+  }
+
+  .projects img {
+    max-width: 35rem;
+    max-height: 35rem;
+  }
 }
