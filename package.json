@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@vercel/node": "^1.5.1",
-    "marked": "^2.0.3",
+    "marked": "^4.0.10",
     "next": "12",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
