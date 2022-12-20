@@ -9,16 +9,38 @@ const Pay = () => {
           <h1 id="who-is-paul-miller">Who is Paul?</h1>
           <section>
             <p>
-              Paul Miller is a web and mobile developer with a year of
-              professional experience building React Native apps. He's even more
-              comfortable building web apps in React, and as an open source
-              hobby builds desktop apps in Rust. Great at finding hairy problems
+              Paul Miller is a frontend developer with experience in Svelte, React, and Rust.
+              He's a "bitcoin developer" in the sense that he's in the bitcoin industry, but please don't ask him to do any cryptography.
+            </p>
+            <p>
+              Paul is great at finding hairy problems
               and doing the &quot;dumb&quot; thing to get the conversation
-              moving toward the right solution. Recently reskilled from writer
-              to developer.
+              moving toward the right solution.
+              He's motivated by seeing the pixels change on screen.
+              Recently reskilled from writer to developer.
             </p>
           </section>
           <h1 id="experience">Experience</h1>
+          <section>
+            <h2 id="frontend-developer">Frontend Developer</h2>
+            <p>
+              <em>
+                Voltage - (Remote) / May 2021 - Current
+              </em>
+            </p>
+            <ul>
+              <li>
+                Wrote Voltage's Flow and Account sites from scratch in Svelte / SvelteKit while maintaining an existing Vue codebase for the flagship Nodes product.
+              </li>
+              <li>
+                Rewrote the Nodes site in SvelteKit to bring it all together as one codebase.
+              </li>
+              <li>
+                TypeScript, REST APIs, and a touch of Lightning-specific stuff. Recently onboarded a more experienced frontend guy and learning a lot from him.
+              </li>
+            </ul>
+
+          </section>
           <section>
             <h2 id="mobile-app-developer">Mobile App Developer</h2>
             <p>
@@ -34,11 +56,6 @@ const Pay = () => {
                 features, and adding some new bugs yet to be found.
               </li>
               <li>
-                Designed (in Figma) and implemented a new &quot;Message
-                Center&quot; portion of the app which added attachments and
-                photos to the existing text messaging of the app.
-              </li>
-              <li>
                 Troubleshooting of hairy React Native problems often caused by
                 poorly maintained dependencies.
               </li>
@@ -47,24 +64,18 @@ const Pay = () => {
           <section>
             <h2 id="open-source-contributor">Open Source Contributor</h2>
             <p>
-              <em>Druid - Github, The Internet / May 2019 - Present</em>
+              <em>Github, The Internet / May 2019 - Current</em>
             </p>
             <ul>
               <li>
-                While learning Rust I became a top contributer to the Druid
+                While learning Rust became a top contributer to the Druid
                 desktop GUI project.
               </li>
               <li>
-                Did the first pass at an almost-full-featured single line
-                editable text box.
+                Helped implement a couple screen redesigns in the popular open source Zeus Lightning wallet.
               </li>
               <li>
-                Designed the default look for Druid in Figma which nobody hates
-                enough to change yet.
-              </li>
-              <li>
-                Implemented some basic widgets like Slider, Progress Bar, and
-                Svg.
+                Built the new opensats.org which includes an integration with Stripe and BtcPay Server for receiving donations.
               </li>
             </ul>
           </section>
@@ -77,9 +88,6 @@ const Pay = () => {
               <li>
                 Helped found <em>The Verge</em>, a leading publication in the
                 space.
-              </li>
-              <li>
-                Wrote and edited everything from news to reviews to opinion.
               </li>
               <li>
                 Co-hosted <em>The Vergecast</em> podcast.
@@ -134,9 +142,7 @@ const Pay = () => {
           margin-left: 60px;
           margin-top: 60px;
         }
-        .subscribe {
-          margin-top: 2rem;
-        }
+
         main {
           margin: auto;
         }
@@ -230,6 +236,10 @@ const Pay = () => {
               rgba(255, 255, 255, 1) 90%
             ),
             url(/cyberdeck.png);
+        }
+
+        ul {
+          padding: 4px;
         }
       `}</style>
     </ResumeLayout>

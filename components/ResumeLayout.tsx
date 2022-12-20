@@ -21,7 +21,7 @@ const Layout = ({ children, pageTitle, windowTitle, navActive }) => {
             <Window title="INFO">
               <h2 id="info">Info</h2>
               <ul>
-                <li>Brooklyn, NY</li>
+                <li>Austin, TX</li>
                 <li>509 845-1595</li>
                 <li>
                   <a href="mailto:paul@paul.lol">paul@paul.lol</a>
@@ -29,22 +29,19 @@ const Layout = ({ children, pageTitle, windowTitle, navActive }) => {
                 <li>
                   <a
                     href="
-paul@paul.lol"
+                    https://github.com/futurepaul"
                   >
-                    @futurepaul
-                  </a>
-                </li>
-                <li>
-                  <a href="https://pauljmiller.com/projects.html">
-                    pauljmiller.com/projects.html
+                    futurepaul on github
                   </a>
                 </li>
               </ul>
               <h2 id="skills">Skills</h2>
               <ul>
+                <li>Svelte</li>
                 <li>React</li>
                 <li>React Native</li>
                 <li>Next.js</li>
+                <li>SvelteKit</li>
                 <li>TypeScript</li>
                 <li>Rust</li>
                 <li>Figma</li>
